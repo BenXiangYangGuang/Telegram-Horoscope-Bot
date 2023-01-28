@@ -4,7 +4,8 @@ import telebot
 
 from utils import get_daily_horoscope
 
-BOT_TOKEN = "5939324097:AAFQjyMTsKuE-NIM6E7GAZ6IO3HtbVHUg6s"
+BOT_TOKEN = "5939324097:AAFV-OvkRog4T4fhL-tMiSMaWnw-8z4nvGA"
+
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
