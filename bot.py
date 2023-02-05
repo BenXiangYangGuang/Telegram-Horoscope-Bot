@@ -4,10 +4,11 @@ import telebot
 
 from utils import get_daily_horoscope
 
+
 BOT_TOKEN = "5939324097:AAFV-OvkRog4T4fhL-tMiSMaWnw-8z4nvGA"
 
-
 bot = telebot.TeleBot(BOT_TOKEN)
+
 
 
 @bot.message_handler(commands=['vx', 'call'])
@@ -53,5 +54,8 @@ def echo_all(message):
 def echo_all(message):
     bot.reply_to(message, "老板，臣妾还没学会这个命令")
 
+if __name__=='__main__':
+    bot.infinity_polling()
 
-bot.infinity_polling()
+    while True:
+        pass
